@@ -26,7 +26,7 @@ class Stack {
 
 }
 function intercambiar(ida, vuelta){
-    for (i=ida.stack.length; i >= vuelta.stack.length; i--){
+    for (i= 0; i < nElementos; i++){
         vuelta.stack.push(ida.stack[ida.stack.length - 1]);
         ida.stack.pop();   
     } 
@@ -43,7 +43,10 @@ ida.push("Malaga");
 ida.push("Sevilla");
 ida.push("terragona");
 ida.push("Madrid");
+ida.push("Barcelona");
 console.log(`recorrido: ${ida.stack}`);
+
+let nElementos = ida.stack.length;
 
 
 const vuelta = new Stack();
